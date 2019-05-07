@@ -1,0 +1,56 @@
+$primary-color : #8fa1c8 ;
+$secundary-color: #D7D7D7;
+#carouselExampleIndicators{
+  padding: 25px;
+}
+.nav{
+  background-color: $primary-color;
+}
+
+body{
+  background-color: $secundary-color;
+}
+
+#searchbar{
+  padding: 25px;
+  bottom: 0px;
+}
+
+.rounded {
+  width: 75px;
+
+}
+
+#shopping-cart{
+  width: 35px;
+  display: inline-block;
+}
+
+.carousel-inner{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 500px;
+  background-color: $secundary-color;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+
+}
+
+.list-group{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.row{
+  background-color: $primary-color;
+}
+
+
+.form-control{
+  width: 60%;
+  padding: 25px;
+  alignment: center;
+}

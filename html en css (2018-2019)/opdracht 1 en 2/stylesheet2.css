@@ -1,0 +1,18 @@
+/*stylesheet2*/
+
+body{
+    background-color: teal;
+    }
+table, tr, td
+    {
+    border: 1px solid black;
+    table-border-color-dark: black;
+    max-width: 500px;
+    }
+tr{
+    background-color: #808080;
+}
+
+td{width: 200px;
+    background-color: #808080;
+}

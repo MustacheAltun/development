@@ -1,0 +1,112 @@
+/*stylesheet2*/
+
+body{
+    background-image: url("1.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    }
+table, tr, td
+    {
+    border: 1px solid black;
+    table-border-color-dark: black;
+    max-width: 100%;
+    }
+tr{
+    background-color: #808080;
+}
+
+td{
+    width: 200px;
+    background-color: #808080;
+}
+
+fieldset{
+    padding: 0px;
+    width: fit-content;
+}
+
+legend{
+    color: gold;
+}
+form{
+    margin: 0px;
+}
+
+th{
+    color: greenyellow;
+}
+
+tbody{
+    color: aqua;
+}
+
+tfoot{
+    color: gold;
+}
+
+caption{
+    color: gold;
+}
+input{
+    size: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  /*  font-family: "Source Code Pro"; */
+}
+
+#sidebar{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 24px;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background: #000000;
+    display: block;
+    margin-top: 4px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nieuw div{
+    padding: 0;
+    margin: 0;
+}
+
+.link h3{
+    margin: 0;
+}

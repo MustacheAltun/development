@@ -1,0 +1,84 @@
+table, th, td{
+    border: 1px solid black;
+
+}
+
+body{
+    background: url(1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+caption{
+    background-color: gold;
+    border: 1px solid black;
+}
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+    margin-top: 0;
+    top: 0;
+
+
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 24px;
+    box-sizing:border-box
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 20px;
+    left: 330px;
+}
+
+.toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background: #000000;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar li:hover{
+    color: red;
+    transition: 2s;
+}
+
+#sidebar li:active{
+    color: blueviolet;
+    transition: 0s;
+}
+
+.link h3{
+    margin: 0;
+    padding: 0;
+}
+
+.nieuw div{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ert{
+    align-content: center;
+}

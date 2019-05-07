@@ -1,0 +1,187 @@
+header
+    {
+    background-color: white;
+    border-style: solid;
+    margin-bottom: 20px;
+    padding: 20px;
+    }
+
+
+
+.main{
+    background-image: url("1.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+
+}
+main
+{
+
+}
+
+article
+    {
+    background-size: cover;
+    margin-bottom: 20px;
+    background-color: white;
+    border-style: solid;
+    }
+
+.video1
+{
+    margin-top: 130px;
+    padding: 5px;
+    margin-left: 2px;
+    display: inline-block;
+    float: right;
+    width: 230px;
+    background-color: white;
+}
+iframe{
+margin-left: 70px;
+width: 250px;
+height: 170px;
+margin-top: 15px;
+}
+
+img
+{
+    display: inline-block;
+   height: 150px;
+    width: 150px;
+}
+
+p
+{
+    display: inline-block;
+    width: 79%;
+    margin-bottom: 0;
+}
+
+footer{
+    color: aqua;
+
+}
+
+.column{
+    background-color: #C1AC8B;
+    float: left;
+    width: 32%;
+    padding: 10px;
+    height: 130px;
+
+}
+
+.row:after{
+    display: flex;
+    clear: both;
+}
+
+a:visited {
+    color: blue;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+h5{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+p{
+    width: 1000px;
+}
+
+.flex-container{
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.flex-container_2{
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: dimgrey;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+    margin-top: 0;
+    top: 0;
+
+
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 24px;
+    box-sizing:border-box
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 20px;
+    left: 330px;
+}
+
+.toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background: #000000;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar li:hover{
+    color: red;
+    transition: 2s;
+}
+
+#sidebar li:active{
+    color: blueviolet;
+    transition: 0s;
+}
+
+span{
+    font-size: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+document.write("<h1>op een aal</h1>")
+document.write("<p>Een aal die bij diverse bieren</p>")
+document.write("<p>het oude jaar had zitten vieren</p>")
+document.write("<p>werd, toen hij na een warme prak</p>")
+document.write("<p>de hoofdverkeersweg overstak</p>")
+document.write("<p>om daar het nieuwe in te halen,</p>")
+document.write("<p>opeens verdeeld in vier kwart-alen.</p>")

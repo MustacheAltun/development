@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="stylesheet2.css">
+    <meta charset="UTF-8">
+    <title>inscrijven</title>
+    <script src="index.js"></script>
+</head>
+<body class="main">
+<aside class="nieuw">
+    <div id="sidebar" class="sidenav">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <ul class="link">
+            <li><h3>menu</h3></li>
+            <a href="index.html"><li>home</li></a>
+            <a href="flexbox.html"><li>foto gallerij</li></a>
+            <a href="inschrijf_formulier.html"><li>inschrijven</li></a>
+            <a href="sport_tabel.html"><li>sport tabel</li></a>
+        </ul>
+
+    </div>
+</aside>
+<form>
+    <center>
+        <fieldset>
+            <table>
+                <caption>inschrijf formulier</caption>
+                <thead>
+                <tr>
+                    <th>vraag</th>
+                    <th>antwoord</th>
+                </tr>
+                </thead>
+                <tbody>
+                <TR>
+
+                    <legend>persoonlijk:</legend>
+                    <TD>voornaam:</TD>
+                    <TD>
+                        <input type="text" maxlength="40" name="voornaam">
+                    </TD>
+                </TR>
+                <TR>
+                    <TD>achternaam:</TD>
+                    <TD>
+                        <input type="text" maxlength="40" name="achternaam">
+                    </TD>
+                </TR>
+                <TR>
+                    <TD>leeftijd:</TD>
+                    <TD>
+                        <input type="text" maxlength="3" name="leeftijd">
+                    </TD>
+                </TR>
+                <TR>
+                    <TD>telefoonnummer:</TD>
+                    <TD>
+                        <input type="number" maxlength="10" name="telefoonnummer">
+                    </TD>
+                </TR>
+                <TR>
+                    <TD>adres:</TD>
+                    <TD>
+                        <input type="text" id="adres" maxlength="40" name="adres">
+                    </TD>
+                </TR>
+                </tbody>
+            </table>
+        </fieldset>
+    </center>
+    <center>
+        <table>
+            <tbody>
+            <TR>
+                <TD>email:</TD>
+                <TD>
+                    <input type="email" maxlength="100" name="email">
+                </TD>
+            </TR>
+            <TR>
+                <TD>gebruikersnaam:</TD>
+                <TD>
+                    <input type="text" maxlength="40" name="wachtwoord">
+                </TD>
+            </TR>
+            <TR>
+                <TD>wachtwoord:</TD>
+                <TD>
+                    <input type="password" maxlength="40" name="gebruikersnaam">
+                </TD>
+            </TR>
+            <TR>
+                <TD>nummer&bijvoegsel:</TD>
+                <TD><input type="text" maxlength="10" name="bijvoegsel"></TD>
+            </TR>
+            <TR>
+                <TD>postcode:</TD>
+                <TD>
+                    <input type="text" maxlength="10" name="postcode">
+                </TD>
+            </TR>
+            <TR>
+                <TD>welke kleur ogen heb je?</TD>
+                <TD>
+                    <input type="radio" name="oogkleur" value="blauw">Blauw
+                    <input type="radio" name="oogkleur" value="bruin">Bruin
+                    <input type="radio" name="oogkleur" value="groen">groen
+                </TD>
+            </TR>
+            <TR>
+                <TD>wat is je geslacht?</TD>
+                <TD>
+                    <label>man</label>
+                    <input type="radio" name="geslacht" value="man"><br>
+                    <label>vrouw</label>
+                    <input type="radio" name="geslacht" value="vrouw"><br>
+                    <label>anders</label>
+                    <input type="radio" name="geslacht" value="anders"><br>
+                </TD>
+            </TR>
+            <tr>
+                <TD>Draag je een bril?</TD>
+                <TD>
+                    <input type="checkbox" name="bril" value="ja">ja
+                    <input type="checkbox" name="bril" value="nee">nee
+                    <input type="checkbox" name="bril" value="contactlenzen">contactlenzen
+                </TD>
+            </tr>
+            <TR>
+                <TD>waar heeft u een blessure?</TD>
+                <TD>
+                    <select name="blessure">
+                        <option>armen</option>
+                        <option>benen</option>
+                        <option>romp</option>
+                        <option>hoofd</option>
+                        <option>nergens</option>
+                    </select>
+                </TD>
+            </TR>
+            <TR>
+                <TD>wat is uw favoriete drankje?</TD>
+                <td>
+                    <select multiple name="drankjes" size="4">
+                        <option value="bier" selected>bier</option>
+                        <option value="wijn">wijn</option>
+                        <option value="water">water</option>
+                        <option value="cola">cola</option>
+                        <option value="energy drank">energy drank</option>
+                        <option value="fanta">fanta</option>
+                        <option value="thee">thee</option>
+                        <option value="koffie">koffie</option>
+                    </select>
+                </td>
+            </TR>
+            <TR>
+                <TD>IP:</TD>
+                <TD>
+                    <input type="hidden" id="custID" size="20" maxlength="40" name="custID">
+                </TD>
+            </TR>
+
+            </tbody>
+            <tfoot>
+            <TR>
+                <TD>points:</TD>
+                <TD>
+                    <input type="range" name="points" min="0" max="10">
+                </TD>
+            </TR>
+
+            <td>
+                <input type="submit" value="submit">
+            </td>
+            <td>
+                <input type="reset" value="reset">
+            </td>
+            </tfoot>
+        </table>
+        <textarea rows="4" cols="50">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur error fuga itaque mollitia obcaecati quas repellat suscipit vero voluptatem. Consequuntur, corporis cum error natus quas soluta. Facilis, laboriosam, obcaecati!
+            </textarea>
+    </center>
+</form>
+</body>
+</html>

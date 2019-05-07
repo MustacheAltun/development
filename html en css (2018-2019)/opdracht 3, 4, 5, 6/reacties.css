@@ -1,0 +1,76 @@
+body{
+    background-image: url("1.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+
+}
+
+header{
+    background-color: white;
+    border: 1px;
+}
+
+
+main{
+    background-color: white;
+    border-style: solid;
+    width: 500px;
+}
+
+h3
+{
+ color: blueviolet;
+}
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+    margin-top: 0;
+    top: 0;
+
+
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 24px;
+    box-sizing:border-box
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 20px;
+    left: 330px;
+}
+
+.toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background: #000000;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar li:hover{
+    color: red;
+    transition: 2s;
+}
+
+#sidebar li:active{
+    color: blueviolet;
+    transition: 0s;
+}
+

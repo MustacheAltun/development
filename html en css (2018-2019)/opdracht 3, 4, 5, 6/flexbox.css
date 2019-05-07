@@ -1,0 +1,112 @@
+
+
+
+.flex-container
+{
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.flex-item
+{
+    border: 10px solid black;
+    margin: 25px;
+    font-size: 0;
+}
+
+.main{
+    background-image: url("1.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: .4s;
+    margin-top: 0;
+    top: 0;
+    margin-left: 0px;
+}
+
+#sidebar.active{
+    left: 0;
+    padding: 0;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: #ffffff;
+    padding: 20px 24px;
+    box-sizing:border-box
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    top: 20px;
+    left: 330px;
+}
+
+.toggle-btn span{
+    width: 45px;
+    height: 4px;
+    background: #000000;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar li:hover{
+    color: red;
+    transition: 2s;
+}
+
+#sidebar li:active{
+    color: blueviolet;
+    transition: 0s;
+}
+#sidebar li{
+padding: 0;
+}
+
+.link{
+    padding-left: 0;
+}
+
+.link h3{
+    margin: 0;
+}
+
+.nieuw div{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.link a{
+    text-decoration: none;
+}
+
+span{
+    font-size: 30px;
+    cursor: pointer;
+}

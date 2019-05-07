@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body background="./verkeer/kruising.png">
+<form>
+    <h1>kruising3.html</h1>
+    <p>een autootje automatisch laten rijden</p>
+    <p>druk op de juiste knop. (maar één keer drukken...)</p>
+    <input type="button" value="start" onclick="starten()">
+    <input type="button" value="stop" onclick="stop()">
+    <input type="button" value="opnieuw" onclick="opnieuw()">
+    <input type="button" value="aanzetten" onclick="aanzetten()">
+    <input type="button" value="knipperen" onclick="knipperen()">
+    <input type="button" value="uitzetten" onclick="uitzetten()">
+    <img id="stoplicht" src="./verkeer/stoplichtuit.png" width="20px" height="40px">
+    <img id="stoplicht2" src="./verkeer/stoplichtuit2.png" width="20px" height="40px">
+    <img id="stoplicht3" src="./verkeer/stoplichtuit3.png" width="40px" height="20px">
+    <img id="stoplicht4" src="./verkeer/stoplichtuit4.png" width="40px" height="20px">
+    <img id="auto" src="./verkeer/autogroen.png" width="40px" height="80px">
+    <img id="auto_b" src="./verkeer/autorood3.png" width="40px" height="80px">
+    <img id="auto_c" src="./verkeer/autorood2.png" width="80px" height="65px">
+    <img id="auto_d" src="./verkeer/autoblauw.png" width="80px" height="40px">
+</form>
+<script>
+    var rijden; // animatie heet 'rijden'
+    var auto = document.getElementById('auto'); // object auto gekoppeld aan het plaatje
+    var auto_b = document.getElementById('auto_b');
+    var auto_c = document.getElementById('auto_c');
+    var auto_d = document.getElementById('auto_d');
+    auto_d.style.position = 'absolute';
+    auto_d.style.right = '0px';
+    auto_d.style.bottom = '340px';
+    auto_c.style.position = 'absolute';
+    auto_c.style.left = '0px';
+    auto_c.style.bottom = '240px';
+    auto_b.style.position = 'absolute';
+    auto_b.style.left = '550px';
+    auto_b.style.top = '0px';
+    auto.style.position = 'absolute';
+    auto.style.left = '650px';
+    auto.style.bottom = '0px';
+    var slir_lr = false;
+    var slir_br = false;
+    var slir_dr = false;
+    var slir_dw = false;
+    function starten() {
+
+        auto.style.bottom = parseInt(auto.style.bottom) + 5 + 'px' ;
+        auto_b.style.top = parseInt(auto_b.style.top) + 5 + 'px' ;
+        auto_c.style.left = parseInt(auto_c.style.left) + 5 + 'px' ;
+        auto_d.style.right = parseInt(auto_d.style.right)+  5 + 'px' ;
+        rijden = setTimeout(starten, 10); // om de 10 msec starten() aanroepen
+        auto_y = parseInt(auto.style.bottom);
+        auto_x = parseInt(auto_b.style.top);
+        auto_f = parseInt(auto_c.style.left);
+        auto_v = parseInt(auto_d.style.right);
+
+        if (auto_y > 770){
+            auto.style.bottom = '-30px';
+
+        }
+        if (auto_x > 770){
+            auto_b.style.top = '-30px';
+
+        }
+        if (auto_f > 1520){
+           auto_c.style.left = '-30px';
+
+        }
+        if (auto_v > 1520){
+           auto_d.style.right = '-30px';
+
+        }
+        if(slir_dr && auto_f == 460)
+        {snelheid = 5;}
+        else
+        {snelheid = 0;}
+        auto_c.style.left = parseInt(auto_c.style.left)-snelheid + 'px';
+
+        if( slir_dw && auto_v == 740)
+        {snelheid = 5;}
+        else
+        {snelheid = 0;}
+        auto_d.style.right = parseInt(auto_d.style.right)-snelheid + 'px';
+
+        if(slir_lr && auto_y == 160)
+        {snelheid = 5;}
+        else
+        {snelheid = 0;}
+        auto.style.bottom = parseInt(auto.style.bottom)-snelheid + 'px';
+
+        if(slir_br && auto_x == 280)
+        {snelheid = 5;}
+        else
+        {snelheid = 0;}
+        auto_b.style.top = parseInt(auto_b.style.top)-snelheid + 'px';
+    }
+    function stop() {
+        clearTimeout(rijden);
+    }
+    function opnieuw() {
+        clearTimeout(rijden);
+        auto.style.bottom = '0px';
+        auto_b.style.top = '0px';
+        auto_c.style.left = '0px';
+        auto_d.style.right = '0px';
+    }
+
+    var werken; // animatie heet 'werken'
+    var buitenwerking; // andere animatie heet 'buitenwerking'
+    var stoplicht = document.getElementById('stoplicht');
+    var stoplicht2 = document.getElementById('stoplicht2');
+    var stoplicht3 = document.getElementById('stoplicht3');
+    var stoplicht4 = document.getElementById('stoplicht4');
+    stoplicht.style.position = 'absolute';
+    stoplicht.style.left = '715px';
+    stoplicht.style.top = '510px';
+    stoplicht2.style.position = 'absolute';
+    stoplicht2.style.left = '515px';
+    stoplicht2.style.bottom = '400px';
+    stoplicht3.style.position = 'absolute';
+    stoplicht3.style.left = '720px';
+    stoplicht3.style.bottom = '400px';
+    stoplicht4.style.position = 'absolute';
+    stoplicht4.style.left = '485px';
+    stoplicht4.style.bottom = '220px';
+    function aanzetten() {
+        clearTimeout(buitenwerking);
+        maakRoodgroen();
+        werken = setTimeout(maakroodGeel, 4000); // na 4 sec (4000 msec) groen maken
+        werken = setTimeout(maakroodrood, 6000); // na 8 sec geel maken
+        werken = setTimeout(maakGroenrood, 8000); // na 8 sec geel maken
+        werken = setTimeout(maakgeelrood, 10000); // na 8 sec geel maken
+        werken = setTimeout(maakroodrood, 12000); // na 8 sec geel maken
+        werken = setTimeout(aanzetten, 14000 );// en na 10 sec opnieuw aanzetten
+    }
+    function knipperen() {
+        clearTimeout(werken);
+        maakgeel();
+        buitenwerking = setTimeout(zetUit, 500 ); // na 500 msec uitzetten
+        buitenwerking = setTimeout(knipperen, 1000); // na 500 msec weer knipperen
+    }
+    function uitzetten() {
+// deze functie zet de animaties van het stoplicht uit
+// dat is anders dan dat de functie zetUit() doet
+        zetUit();
+        clearTimeout(buitenwerking);
+        clearTimeout(werken);
+    }
+    function maakRoodgroen() {
+        stoplicht.src = "./verkeer/stoplichtrood.png";
+        stoplicht2.src = "./verkeer/stoplichtrood2.png";
+        stoplicht3.src = "./verkeer/stoplichtgroen3.png";
+        stoplicht4.src = "./verkeer/stoplichtgroen4.png";
+        slir_lr = true;
+        slir_br = true;
+        slir_dr = false;
+        slir_dw = false;
+    }
+    function maakGroenrood() {
+        stoplicht.src = "./verkeer/stoplichtgroen.png";
+        stoplicht2.src = "./verkeer/stoplichtgroen2.png";
+        stoplicht3.src = "./verkeer/stoplichtrood3.png";
+        stoplicht4.src = "./verkeer/stoplichtrood4.png";
+        slir_lr = false;
+        slir_br = false;
+        slir_dr = true;
+        slir_dw = true;
+    }
+    function maakroodGeel() {
+        stoplicht.src = "./verkeer/stoplichtrood.png";
+        stoplicht2.src = "./verkeer/stoplichtrood2.png";
+        stoplicht3.src = "./verkeer/stoplichtgeel3.png";
+        stoplicht4.src = "./verkeer/stoplichtgeel4.png";
+        slir_lr = true;
+        slir_br = true;
+        slir_dr = false;
+        slir_dw = false;
+    }
+    function maakgeelrood() {
+        stoplicht.src = "./verkeer/stoplichtgeel.png";
+        stoplicht2.src = "./verkeer/stoplichtgeel2.png";
+        stoplicht3.src = "./verkeer/stoplichtrood3.png";
+        stoplicht4.src = "./verkeer/stoplichtrood4.png";
+        slir_lr = false;
+        slir_br = false;
+        slir_dr = true;
+        slir_dw = true;
+    }
+    function maakroodrood() {
+        stoplicht.src = "./verkeer/stoplichtrood.png";
+        stoplicht2.src = "./verkeer/stoplichtrood2.png";
+        stoplicht3.src = "./verkeer/stoplichtrood3.png";
+        stoplicht4.src = "./verkeer/stoplichtrood4.png";
+        slir_lr = true;
+        slir_br = true;
+        slir_dr = true;
+        slir_dw = true;
+    }
+    function maakgeel() {
+        stoplicht.src = "./verkeer/stoplichtgeel.png";
+        stoplicht2.src = "./verkeer/stoplichtgeel2.png";
+        stoplicht3.src = "./verkeer/stoplichtgeel3.png";
+        stoplicht4.src = "./verkeer/stoplichtgeel4.png";
+        slir_lr = false;
+        slir_br = false;
+        slir_dr = false;
+        slir_dw = false;
+    }
+    function zetUit() {
+// deze functie laat het plaatje met alle lampjes uit zien.
+// niet verwarren met de functie uitzetten()
+        stoplicht.src = "./verkeer/stoplichtuit.png";
+        stoplicht2.src = "./verkeer/stoplichtuit2.png";
+        stoplicht3.src = "./verkeer/stoplichtuit3.png";
+        stoplicht4.src = "./verkeer/stoplichtuit4.png";
+        slir_lr = false;
+        slir_br = false;
+        slir_dr = false;
+        slir_dw = false;
+    }
+
+</script>
+</body>
+</html>

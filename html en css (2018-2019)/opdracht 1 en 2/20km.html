@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inschrijfformulier 20km</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+</head>
+<body>
+
+<form method="post" action="email@hotmail.com" >
+    <center>
+        <table>
+            <TR>
+                <TD>voornaam:</TD>
+                <TD><input type="text" size="20" maxlength="40" name="voornaam"></TD>
+            </TR>
+            <TR>
+                <TD>achternaam:</TD>
+                <TD><input type="text" size="20" maxlength="40" name="achternaam"></TD>
+            </TR>
+            <TR>
+                <TD>leeftijd:</TD>
+                <TD><input type="text" size="20" maxlength="3" name="leeftijd"></TD>
+            </TR>
+            <TR>
+                <TD>telefoonnummer:</TD>
+                <TD><input type="text" size="20" maxlength="10" name="telefoonnummer"></TD>
+            </TR>
+            <TR>
+                <TD>adres:</TD>
+                <TD><input type="text" size="20" maxlength="40" name="adres"></TD>
+            </TR>
+            <TR>
+                <TD>nummer&bijvoegsel:</TD>
+                <TD><input type="text" size="20" maxlength="10" name="bijvoegsel"></TD>
+            </TR>
+            <TR>
+                <TD>postcode:</TD>
+                <TD><input type="text" size="20" maxlength="10" name="postcode"></TD>
+            </TR>
+            <TR>
+                <TD>welke kleur ogen heb je?</TD>
+                <TD>
+                    <input type="radio" name="oogkleur" value="blauw">Blauw
+                    <input type="radio" name="oogkleur" value="bruin">Bruin
+                    <input type="radio" name="oogkleur" value="groen">groen
+                </TD>
+            </TR>
+            <tr>
+                <TD>Draag je een bril?</TD>
+                <TD>
+                    <input type="checkbox" name="bril" value="ja">ja
+                    <input type="checkbox" name="bril" value="nee">nee
+                    <input type="checkbox" name="bril" value="contactlenzen">contactlenzen
+                </TD>
+            </tr>
+            <TR>
+                <TD>waar heeft u een blessure?</TD>
+                <TD>
+                    <select name="blessure">
+                        <option>armen</option>
+                        <option>benen</option>
+                        <option>romp</option>
+                        <option>hoofd</option>
+                        <option>nergens</option>
+                    </select>
+                </TD>
+            </TR>
+            <div>
+                <TR>
+                    <TD>wat is uw favoriete drankje?</TD>
+                    <td>
+                        <select multiple name="drankjes" size="4">
+                            <option value="bier" selected>bier</option>
+                            <option value="wijn">wijn</option>
+                            <option value="water">water</option>
+                            <option value="cola">cola</option>
+                            <option value="energy drank">energy drank</option>
+                            <option value="fanta">fanta</option>
+                            <option value="thee">thee</option>
+                            <option value="koffie">koffie</option>
+                        </select>
+                    </td>
+                </TR>
+            </div>
+            <div>
+
+                <td>
+                    <input type="submit" value="Verzenden">
+                </td>
+                <td>
+                    <input type="reset" value="reset">
+                </td>
+                </TR>
+            </div>
+    </center>
+    </table>
+</form>
+<center><img src="rennen_2.jpg" width="400" alt="heel veel mensen die rennen"></center>
+
+</body>
+</html>

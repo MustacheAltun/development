@@ -1,0 +1,53 @@
+/*stylesheet.css*/
+
+header
+        {
+            padding: 20px;
+            background-color: chartreuse;
+            border-style: solid;
+        }
+
+nav {
+    height: 25px;
+    width: 500px;
+    background-color: aqua;
+    }
+main
+    {
+    border-style: solid;
+    height: 250px;
+    width: 79%;
+    background-color: aliceblue;
+    }
+h3
+    {
+    color: red;
+    }
+
+    footer
+        {
+            color: burlywood;
+            margin-top: 60px;
+        }
+.inschrijven
+          {
+              border-style: solid;
+              width: 1188px;
+              height: 79%;
+              background-color: beige;
+          }
+.img_with_text
+{
+    margin-bottom: 0px;
+    padding: 50px;
+}
+
+a:hover
+    {
+    background-color: grey;
+    }
+
+a:active
+    {
+    color: white;
+    }
