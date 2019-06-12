@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learning_project3", "learning_project3\learning_project3.csproj", "{56FD18AB-06B2-4F46-BB7D-EB3E0DD60B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fun_mathgame", "fun_mathgame\fun_mathgame.csproj", "{D8942393-E538-47C2-8DB8-3F4D8146A6BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56FD18AB-06B2-4F46-BB7D-EB3E0DD60B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FD18AB-06B2-4F46-BB7D-EB3E0DD60B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FD18AB-06B2-4F46-BB7D-EB3E0DD60B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FD18AB-06B2-4F46-BB7D-EB3E0DD60B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8942393-E538-47C2-8DB8-3F4D8146A6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8942393-E538-47C2-8DB8-3F4D8146A6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8942393-E538-47C2-8DB8-3F4D8146A6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8942393-E538-47C2-8DB8-3F4D8146A6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB39AB4C-F615-47CC-B077-5A43D116D0BD}
+	EndGlobalSection
+EndGlobal
